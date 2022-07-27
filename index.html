@@ -16,12 +16,11 @@
             theme: {
                 extend: {
                     colors: {
-                        clifford: '#da373d',
-                        bannercolor: '#fffbf0',
-                        limecolor: '#A4BC46',
-                        darkbluecolor: '#363958',
-                        darkgraycolor: '#3E3E3E',
-
+                        bannerColor: '#fffbf0',
+                        yellowColor: '#FABE4C',
+                        limeColor: '#A4BC46',
+                        darkblueColor: '#363958',
+                        darkgrayColor: '#3E3E3E',
                     }
                 }
             }
@@ -29,30 +28,165 @@
     </script>
 </head>
 <body>
-    <header class="bg-bannercolor pb-32 pt-8">
-        <section class="container mx-auto flex items-center justify-around">
-            <div class="space-y-4">
+    <header class="bg-bannerColor">
+    <!-------------------------------
+            Banner flex
+    --------------------------------->
+        <!-- <section class="container mx-auto sm:flex items-center justify-around">
+            <nav className="sm:flex justify-around space-x-4">
+                <div>
+                    <img class="w-1/3" src="images/logo.png" alt="">
+                </div>
+                <div >
+                    <a href="/dashboard" class="font-bold px-3 py-2 text-slate-700 rounded-lg hover:bg-slate-100 hover:text-slate-900">Home</a>
+                </div>
+            </nav>
+        </section> -->
+    <!-------------------------------
+            Banner flex
+    --------------------------------->
+        <section class="container mx-auto grid md:grid-cols-2 lg:grid-cols-2 gap-7 items-center pt-8 pb-16">
+            <div class="p-4 space-y-2">
                 <h1 class="text-5xl uppercase font-babes-neue">
-                    <span class="text-yellow-400">Be The Penguins</span>
+                    <span class="text-yellowColor">Be The Penguins</span>
                     <br>
-                    <span class="text-darkbluecolor">Of Winter</span>
+                    <span class="text-darkblueColor">Of Winter</span>
                 </h1>
-                <p class="font-roboto text-darkgraycolor">Lorem Ipsum is simply dummy text of the printing 
+                <p class="font-roboto text-darkgrayColor">Lorem Ipsum is simply dummy text of the printing 
                     and typesetting industry.</p>
-                <button class="font-roboto uppercase text-white bg-limecolor py-3 px-5 rounded-md">
+                <button class="font-roboto uppercase text-white bg-limeColor py-3 px-5 rounded-md">
                     <svg xmlns="http://www.w3.org/2000/svg" class="h-5 w-5 inline" viewBox="0 0 20 20" fill="currentColor">
-                            <path d="M3 1a1 1 0 000 2h1.22l.305 1.222a.997.997 0 00.01.042l1.358 5.43-.893.892C3.74 11.846 4.632 14 6.414 14H15a1 1 0 000-2H6.414l1-1H14a1 1 0 00.894-.553l3-6A1 1 0 0017 3H6.28l-.31-1.243A1 1 0 005 1H3zM16 16.5a1.5 1.5 0 11-3 0 1.5 1.5 0 013 0zM6.5 18a1.5 1.5 0 100-3 1.5 1.5 0 000 3z" />
+                        <path d="M3 1a1 1 0 000 2h1.22l.305 1.222a.997.997 0 00.01.042l1.358 5.43-.893.892C3.74 11.846 4.632 14 6.414 14H15a1 1 0 000-2H6.414l1-1H14a1 1 0 00.894-.553l3-6A1 1 0 0017 3H6.28l-.31-1.243A1 1 0 005 1H3zM16 16.5a1.5 1.5 0 11-3 0 1.5 1.5 0 013 0zM6.5 18a1.5 1.5 0 100-3 1.5 1.5 0 000 3z" />
                     </svg>
                     Buy Now
                 </button>
             </div>
-            <div>
-                <img src="images/model.png" alt="">
+            <div class="p-4">
+                <img class="w-100 sm:w-full" src="images/model.png" alt="model">
             </div>
         </section>
     </header>
     <main>
-
+        <!-------------------------
+            Woman Jacket
+        --------------------------->
+        <section class="container mx-auto">
+            <h1 class="text-4xl uppercase text-darkblueColor font-babes-neue py-10">Women Jacket</h1>
+            
+            <div class="grid md:grid-cols-2 lg:grid-cols-3 gap-7">
+                <!-- Jecket 1 -->
+                <div class="font-roboto p-4 shadow-lg rounded-3xl">
+                    <div class="p-5 bg-slate-100 rounded-3xl">
+                        <img src="images/jacket-1.png" alt="Jecket">
+                    </div>
+                    <h3 class="text-3xl font-semibold text-darkblueColor">Yellow Coat Jacket</h3>
+                    <p class="text-darkgrayColor">Lorem Ipsum is simply dummy text of the printing and typesetting industry.</p>
+                    <div class="sm:flex justify-between">
+                        <h2 class="text-5xl font-bold text-yellowColor">$234</h2>
+                        <button class="font-roboto uppercase text-white bg-limeColor py-3 px-5 rounded-md">
+                            <svg xmlns="http://www.w3.org/2000/svg" class="h-5 w-5 inline" viewBox="0 0 20 20" fill="currentColor">
+                                <path d="M3 1a1 1 0 000 2h1.22l.305 1.222a.997.997 0 00.01.042l1.358 5.43-.893.892C3.74 11.846 4.632 14 6.414 14H15a1 1 0 000-2H6.414l1-1H14a1 1 0 00.894-.553l3-6A1 1 0 0017 3H6.28l-.31-1.243A1 1 0 005 1H3zM16 16.5a1.5 1.5 0 11-3 0 1.5 1.5 0 013 0zM6.5 18a1.5 1.5 0 100-3 1.5 1.5 0 000 3z" />
+                            </svg>
+                            Buy Now
+                        </button>
+                    </div>
+                </div>
+                <!-- Jecket 2 -->
+                <div class="font-roboto p-4 shadow-lg rounded-3xl">
+                    <div class="p-5 bg-slate-100 rounded-2xl">
+                        <img src="images/jacket-2.png" alt="Jecket">
+                    </div>
+                    <h3 class="text-3xl font-semibold text-darkblueColor">Ladies Jacket</h3>
+                    <p class="text-darkgrayColor">Lorem Ipsum is simply dummy text of the printing and typesetting industry.</p>
+                    <div class="sm:flex justify-between">
+                        <h2 class="text-5xl font-bold text-yellowColor">$234</h2>
+                        <button class="font-roboto uppercase text-white bg-limeColor py-3 px-5 rounded-md">
+                            <svg xmlns="http://www.w3.org/2000/svg" class="h-5 w-5 inline" viewBox="0 0 20 20" fill="currentColor">
+                                <path d="M3 1a1 1 0 000 2h1.22l.305 1.222a.997.997 0 00.01.042l1.358 5.43-.893.892C3.74 11.846 4.632 14 6.414 14H15a1 1 0 000-2H6.414l1-1H14a1 1 0 00.894-.553l3-6A1 1 0 0017 3H6.28l-.31-1.243A1 1 0 005 1H3zM16 16.5a1.5 1.5 0 11-3 0 1.5 1.5 0 013 0zM6.5 18a1.5 1.5 0 100-3 1.5 1.5 0 000 3z" />
+                            </svg>
+                            Buy Now
+                        </button>
+                    </div>
+                </div>
+                <!-- Jecket 3 -->
+                <div class="font-roboto p-4 shadow-lg rounded-3xl">
+                    <div class="p-5 bg-slate-100 rounded-2xl">
+                        <img src="images/jacket-3.png" alt="Jecket">
+                    </div>
+                    <h3 class="text-3xl font-semibold text-darkblueColor">Woman Leather Jacket</h3>
+                    <p class="text-darkgrayColor">Lorem Ipsum is simply dummy text of the printing and typesetting industry.</p>
+                    <div class="sm:flex justify-between">
+                        <h2 class="text-5xl font-bold text-yellowColor">$234</h2>
+                        <button class="font-roboto uppercase text-white bg-limeColor py-3 px-5 rounded-md">
+                            <svg xmlns="http://www.w3.org/2000/svg" class="h-5 w-5 inline" viewBox="0 0 20 20" fill="currentColor">
+                                <path d="M3 1a1 1 0 000 2h1.22l.305 1.222a.997.997 0 00.01.042l1.358 5.43-.893.892C3.74 11.846 4.632 14 6.414 14H15a1 1 0 000-2H6.414l1-1H14a1 1 0 00.894-.553l3-6A1 1 0 0017 3H6.28l-.31-1.243A1 1 0 005 1H3zM16 16.5a1.5 1.5 0 11-3 0 1.5 1.5 0 013 0zM6.5 18a1.5 1.5 0 100-3 1.5 1.5 0 000 3z" />
+                            </svg>
+                            Buy Now
+                        </button>
+                    </div>
+                </div>
+            </div>
+        </section>
+        <!-------------------------
+            Man Jacket
+        --------------------------->
+        <section class="container mx-auto">
+            <h1 class="text-4xl uppercase text-darkblueColor font-babes-neue py-10">Man Jacket</h1>
+            
+            <div class="grid md:grid-cols-2 lg:grid-cols-3 gap-7">
+                <!-- Jecket 1 -->
+                <div class="font-roboto p-4 shadow-lg  rounded-3xl">
+                    <div class="p-5 bg-slate-100 rounded-3xl">
+                        <img src="images/jacket-4.png" alt="Jecket">
+                    </div>
+                    <h3 class="text-3xl font-semibold text-darkblueColor">Snowboard Jacket Mens</h3>
+                    <p class="text-darkgrayColor">Lorem Ipsum is simply dummy text of the printing and typesetting industry.</p>
+                    <div class="sm:flex justify-between">
+                        <h2 class="text-5xl font-bold text-yellowColor">$234</h2>
+                        <button class="font-roboto uppercase text-white bg-limeColor py-3 px-5 rounded-md">
+                            <svg xmlns="http://www.w3.org/2000/svg" class="h-5 w-5 inline" viewBox="0 0 20 20" fill="currentColor">
+                                <path d="M3 1a1 1 0 000 2h1.22l.305 1.222a.997.997 0 00.01.042l1.358 5.43-.893.892C3.74 11.846 4.632 14 6.414 14H15a1 1 0 000-2H6.414l1-1H14a1 1 0 00.894-.553l3-6A1 1 0 0017 3H6.28l-.31-1.243A1 1 0 005 1H3zM16 16.5a1.5 1.5 0 11-3 0 1.5 1.5 0 013 0zM6.5 18a1.5 1.5 0 100-3 1.5 1.5 0 000 3z" />
+                            </svg>
+                            Buy Now
+                        </button>
+                    </div>
+                </div>
+                <!-- Jecket 2 -->
+                <div class="font-roboto p-4 shadow-lg rounded-3xl">
+                    <div class="p-5 bg-slate-100 rounded-2xl">
+                        <img src="images/jacket-5.png" alt="Jecket">
+                    </div>
+                    <h3 class="text-3xl font-semibold text-darkblueColor">Man Leather Jackets</h3>
+                    <p class="text-darkgrayColor">Lorem Ipsum is simply dummy text of the printing and typesetting industry.</p>
+                    <div class="sm:flex justify-between">
+                        <h2 class="text-5xl font-bold text-yellowColor">$234</h2>
+                        <button class="font-roboto uppercase text-white bg-limeColor py-3 px-5 rounded-md">
+                            <svg xmlns="http://www.w3.org/2000/svg" class="h-5 w-5 inline" viewBox="0 0 20 20" fill="currentColor">
+                                <path d="M3 1a1 1 0 000 2h1.22l.305 1.222a.997.997 0 00.01.042l1.358 5.43-.893.892C3.74 11.846 4.632 14 6.414 14H15a1 1 0 000-2H6.414l1-1H14a1 1 0 00.894-.553l3-6A1 1 0 0017 3H6.28l-.31-1.243A1 1 0 005 1H3zM16 16.5a1.5 1.5 0 11-3 0 1.5 1.5 0 013 0zM6.5 18a1.5 1.5 0 100-3 1.5 1.5 0 000 3z" />
+                            </svg>
+                            Buy Now
+                        </button>
+                    </div>
+                </div>
+                <!-- Jecket 3 -->
+                <div class="font-roboto p-4 shadow-lg rounded-3xl">
+                    <div class="p-5 bg-slate-100 rounded-2xl">
+                        <img src="images/jacket-6.png" alt="Jecket">
+                    </div>
+                    <h3 class="text-3xl font-semibold text-darkblueColor">Man Casual Jackets</h3>
+                    <p class="text-darkgrayColor">Lorem Ipsum is simply dummy text of the printing and typesetting industry.</p>
+                    <div class="sm:flex justify-between">
+                        <h2 class="text-5xl font-bold text-yellowColor">$234</h2>
+                        <button class="font-roboto uppercase text-white bg-limeColor py-3 px-5 rounded-md">
+                            <svg xmlns="http://www.w3.org/2000/svg" class="h-5 w-5 inline" viewBox="0 0 20 20" fill="currentColor">
+                                <path d="M3 1a1 1 0 000 2h1.22l.305 1.222a.997.997 0 00.01.042l1.358 5.43-.893.892C3.74 11.846 4.632 14 6.414 14H15a1 1 0 000-2H6.414l1-1H14a1 1 0 00.894-.553l3-6A1 1 0 0017 3H6.28l-.31-1.243A1 1 0 005 1H3zM16 16.5a1.5 1.5 0 11-3 0 1.5 1.5 0 013 0zM6.5 18a1.5 1.5 0 100-3 1.5 1.5 0 000 3z" />
+                            </svg>
+                            Buy Now
+                        </button>
+                    </div>
+                </div>
+            </div>
+        </section>
     </main>
 </body>
 </html>
